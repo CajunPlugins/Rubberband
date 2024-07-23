@@ -2,10 +2,10 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "MyPlugin",
-	"Description": "MyPlugin",
-	"Category": "MyPlugin",
-	"CreatedBy": "MyPlugin",
+	"FriendlyName": "Rubberband",
+	"Description": "Rubberband",
+	"Category": "Rubberband",
+	"CreatedBy": "Rubberband",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
@@ -16,7 +16,7 @@
 	"Installed": true,
 	"Modules": [
 		{
-			"Name": "MyPlugin",
+			"Name": "Rubberband",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

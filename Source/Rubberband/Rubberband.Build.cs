@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class MyPlugin : ModuleRules
+public class Rubberband : ModuleRules
 {
-	public  MyPlugin(ReadOnlyTargetRules Target) : base(Target)
+	public  Rubberband(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
