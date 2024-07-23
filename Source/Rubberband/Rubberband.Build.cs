@@ -1,4 +1,4 @@
-// %COPYWRITE%
+// Copyright 2024 Cajun Pro LLC. All Rights Reserved.
 
 using UnrealBuildTool;
 
