@@ -8,7 +8,7 @@ public class Rubberband : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		
-		PublicDependencyModuleNames.AddRange(new [] { "Core" });
+		PublicDependencyModuleNames.AddRange(new [] { "Core", "UMG" });
 		PrivateDependencyModuleNames.AddRange(new [] { "CoreUObject", "Engine" });
 	}
 }
