@@ -1,6 +1,5 @@
 ﻿// Copyright 2024 Cajun Pro LLC. All Rights Reserved.
 
-
 #include "RubberbandFunctionLibrary.h"
 
 #include "Blueprint/SlateBlueprintLibrary.h"
@@ -20,7 +19,7 @@ void URubberbandFunctionLibrary::ThreeSides(UWidget* Widget, const float Alpha, 
 
 void URubberbandFunctionLibrary::AllSides(UWidget* Widget, const float Alpha, bool& bUnchanged, FVector2D& Transform)
 {
-	Transform = FVector2D(UKismetMathLibrary::Lerp(GetWX(Widget), 0.0f, Alpha),UKismetMathLibrary::Lerp(GetWY(Widget), 0, Alpha));
+	Transform = FVector2D(UKismetMathLibrary::Lerp(GetWx(Widget), 0.0f, Alpha),UKismetMathLibrary::Lerp(GetWy(Widget), 0, Alpha));
 	bool Changed = GetWLeft(Widget) > GetVLeft(Widget) && GetWTop(Widget) > GetVTop(Widget) && GetWRight(Widget) < GetVRight(Widget) && GetWBottom(Widget) < GetVBottom(Widget);
 	bUnchanged = !Changed;
 }
@@ -33,9 +32,9 @@ float URubberbandFunctionLibrary::GetVRight(UWidget* Widget) { return Widget ? U
 
 float URubberbandFunctionLibrary::GetVBottom(UWidget* Widget) { return Widget ? UWidgetLayoutLibrary::GetViewportSize(Widget).Y : 0.0f; }
 
-float URubberbandFunctionLibrary::GetWX(const UWidget* Widget) { return Widget ? Widget->GetRenderTransform().Translation.X : 0.0f; }
+float URubberbandFunctionLibrary::GetWx(UWidget* Widget) { return Widget ? Widget->GetRenderTransform().Translation.X : 0.0f; }
 
-float URubberbandFunctionLibrary::GetWY(const UWidget* Widget) { return Widget ? Widget->GetRenderTransform().Translation.Y : 0.0f; }
+float URubberbandFunctionLibrary::GetWy(UWidget* Widget) { return Widget ? Widget->GetRenderTransform().Translation.Y : 0.0f; }
 
 float URubberbandFunctionLibrary::GetWLeft(UWidget* Widget)
 {

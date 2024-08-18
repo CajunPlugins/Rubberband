@@ -31,14 +31,13 @@ public:
 
 	UFUNCTION(BlueprintPure, Category="Rubberband")
 	static void AllSides(class UWidget* Widget, const float Alpha, bool& bUnchanged, FVector2D& Transform);
-
-protected:
+	
 	static float GetVTop(class UWidget* Widget);
 	static float GetVLeft(class UWidget* Widget);
 	static float GetVRight(class UWidget* Widget);
 	static float GetVBottom(class UWidget* Widget);
-	static float GetWX(const class UWidget* Widget);
-	static float GetWY(const class UWidget* Widget);
+	static float GetWx(class UWidget* Widget);
+	static float GetWy(class UWidget* Widget);
 	static float GetWLeft(class UWidget* Widget);
 	static float GetWTop(class UWidget* Widget);
 	static float GetWRight(class UWidget* Widget);
